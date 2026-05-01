@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AutoBrandFlow — Done-For-You AI Agent Sprint in 7 days</title>
+<meta name="description" content="A working AI agent in your stack in 7 days. Flat $2,500. Refundable until kickoff. For US-based SMB operators with a manual workflow." />
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="AutoBrandFlow — Done-For-You AI Agent Sprint" />
+<meta property="og:description" content="A working AI agent in your stack in 7 days. Flat $2,500. Refundable until kickoff." />
+<meta property="og:type" content="website" />
+<style>
+  :root {
+    --ink: #0f1115;
+    --ink-soft: #2a2e36;
+    --muted: #5a6170;
+    --line: #e6e8ec;
+    --bg: #fafaf7;
+    --panel: #ffffff;
+    --accent: #0a5cff;
+    --accent-ink: #ffffff;
+    --good: #0e7a3a;
+    --max: 760px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  main { max-width: var(--max); margin: 0 auto; padding: 56px 24px 96px; }
+  header.brand {
+    font-size: 14px; color: var(--muted);
+    letter-spacing: 0.06em; text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+  h1 { font-size: 40px; line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 18px; }
+  .lede { font-size: 19px; color: var(--ink-soft); margin: 0 0 28px; }
+  .price { display: flex; gap: 16px; align-items: baseline; margin: 0 0 8px; flex-wrap: wrap; }
+  .price .amount { font-size: 32px; font-weight: 600; }
+  .price .terms { color: var(--muted); }
+  .cta-row { display: flex; flex-direction: column; gap: 10px; margin: 28px 0 12px; }
+  .cta {
+    display: inline-block; background: var(--accent); color: var(--accent-ink);
+    padding: 16px 22px; border-radius: 10px; text-decoration: none; font-weight: 600;
+    text-align: center; font-size: 17px;
+  }
+  .cta:hover { filter: brightness(0.95); }
+  .guarantee { color: var(--good); font-size: 14px; text-align: center; margin: 0; }
+  .us-only { color: var(--ink-soft); font-size: 14px; text-align: center; margin: 0 0 4px; font-weight: 600; }
+  h2 { font-size: 22px; margin: 56px 0 14px; letter-spacing: -0.005em; }
+  h2 + p.section-lede { margin-top: 0; color: var(--ink-soft); }
+  ul { padding-left: 22px; margin: 0 0 16px; }
+  li { margin: 6px 0; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 18px 0; }
+  @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .card {
+    border: 1px solid var(--line); border-radius: 10px;
+    padding: 18px; background: var(--panel);
+  }
+  .card h3 { margin: 0 0 8px; font-size: 16px; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+  .step { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .step:last-child { border-bottom: 0; }
+  .step .num { flex: 0 0 80px; font-weight: 600; color: var(--muted); }
+  .demo {
+    border: 1px dashed var(--line); border-radius: 10px;
+    padding: 36px 18px; text-align: center; color: var(--muted);
+    background: var(--panel);
+  }
+  .delivery-owner {
+    display: flex; align-items: center; gap: 1rem;
+    margin: 28px 0 8px; padding: 16px 20px;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--panel);
+  }
+  .delivery-owner__photo {
+    width: 72px; height: 72px; border-radius: 50%;
+    flex-shrink: 0; display: grid; place-items: center;
+    background: #1f2937; color: #fff;
+    font-weight: 600; font-size: 1.5rem; letter-spacing: 0.02em;
+  }
+  .delivery-owner__copy { font-size: 0.95rem; line-height: 1.5; }
+  .delivery-owner__copy p { margin: 0 0 4px; }
+  .delivery-owner__why { color: var(--muted); font-size: 0.875rem; }
+  @media (max-width: 480px) { .delivery-owner { flex-direction: column; text-align: center; } }
+  .faq { border-top: 1px solid var(--line); padding-top: 6px; }
+  .faq details { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq p { margin: 8px 0 0; color: var(--ink-soft); }
+  footer { margin-top: 72px; color: var(--muted); font-size: 14px; text-align: center; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header class="brand">AutoBrandFlow</header>
+
+  <h1>A working AI agent in your stack. In 7 days.</h1>
+  <p class="lede">
+    We build one custom AI agent — running on your tools, your API keys, your environment —
+    and hand you the keys. Flat fee. Fixed scope. No retainer. No hosting lock-in.
+  </p>
+
+  <div class="price">
+    <span class="amount">$2,500</span>
+    <span class="terms">flat. One workflow. 7 calendar days.</span>
+  </div>
+
+  <div class="cta-row">
+    <p class="us-only">Sprints currently for US-based companies only.</p>
+    <a class="cta" href="{{TALLY_APPLY_URL}}">Apply for a sprint</a>
+    <p class="guarantee">100% refundable until the kickoff call begins. Non-refundable thereafter. Refunds processed by Paddle (Merchant of Record).</p>
+  </div>
+
+  <h2>Who this is for</h2>
+  <p class="section-lede">
+    US-based SMB founders and operators with a manual workflow they keep saying
+    <em>"an AI should do this."</em>
+  </p>
+  <ul>
+    <li>5&ndash;50 person company. Owner, founder, or department head can sign off on a $2,500 spend.</li>
+    <li>You already use modern SaaS (Slack, Gmail, Notion, Airtable, HubSpot, Stripe, etc.).</li>
+    <li>You have one repetitive workflow eating 5&ndash;15 hours/week.</li>
+    <li>You can hand us API keys and review a working demo within a 7-day window.</li>
+  </ul>
+
+  <h2>What you get</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>One agent, one workflow</h3>
+      <p>We pick the workflow on the kickoff call. One that matters and that an agent can actually do well.</p>
+    </div>
+    <div class="card">
+      <h3>Runs in your environment</h3>
+      <p>Your Slack, your cron, your Zapier, your repo. Your API keys. We don't host your data or your agent.</p>
+    </div>
+    <div class="card">
+      <h3>Source + plain-English runbook</h3>
+      <p>You own the code. We hand over a short runbook so you (or your engineer) can change it later.</p>
+    </div>
+    <div class="card">
+      <h3>One revision pass included</h3>
+      <p>Within the 7-day window after you start using it. Bug fixes and prompt tuning, async, fast.</p>
+    </div>
+  </div>
+
+  <h2>How it works</h2>
+  <div class="card" style="padding: 8px 18px;">
+    <div class="step"><div class="num">1. Apply</div><div>Tell us about your workflow. Two minutes, one form.</div></div>
+    <div class="step"><div class="num">2. Fit call</div><div>15 minutes. We confirm the workflow is a fit and answer your questions. No deep scoping yet — that happens after kickoff.</div></div>
+    <div class="step"><div class="num">3. Kickoff</div><div>Pay $2,500. The 7-day clock starts. Day 1 is the deep scoping call where we lock the build.</div></div>
+    <div class="step"><div class="num">4. Ship</div><div>Daily 2-line updates. Day 5 demo. Day 7 handoff: code, keys, runbook.</div></div>
+  </div>
+
+  <!--
+    Demo section removed per RAPA-19 hard gate #1: section is added back when
+    RAPA-16 lands a 90-sec demo URL. No "coming soon" placeholder allowed.
+  -->
+
+  <section class="delivery-owner" aria-label="Your delivery owner">
+    <img
+      src="/assets/cto-headshot.jpg"
+      alt="Headshot of {{CTO_NAME}}, delivery owner"
+      width="96" height="96"
+      class="delivery-owner__photo"
+      loading="lazy"
+    />
+    <div class="delivery-owner__copy">
+      <p class="delivery-owner__lede">
+        <strong>Your delivery owner: {{CTO_NAME}}</strong>
+      </p>
+      <p>Hands-on engineer responsible for build and handoff.</p>
+      <p class="delivery-owner__why">
+        Named because at $2,500 you should know who's on the other end.
+      </p>
+    </div>
+  </section>
+
+  <h2>What we won't do</h2>
+  <ul>
+    <li>Multi-agent orchestration or anything needing more than two SaaS integrations.</li>
+    <li>Custom UI, web app, or mobile work beyond a chat surface you already have.</li>
+    <li>HIPAA / SOC2 / on-prem deployments.</li>
+    <li>Hosted infrastructure for your agent &mdash; we hand off, you host.</li>
+    <li>Discovery without a committed build (no paid audits).</li>
+  </ul>
+
+  <h2>FAQ</h2>
+  <div class="faq">
+    <details>
+      <summary>What does the $2,500 actually cover?</summary>
+      <p>Discovery, build, demo, handoff, and one revision pass within the 7-day window. One workflow, one agent. Flat fee &mdash; no hourly billing, no surprises.</p>
+    </details>
+    <details>
+      <summary>What's the refund policy?</summary>
+      <p><strong>100% refundable until the kickoff call begins.</strong> After kickoff begins, the fee is non-refundable because the build clock has started. Payments are processed by Paddle (our Merchant of Record); refunds issued through Paddle to the original payment method.</p>
+    </details>
+    <details>
+      <summary>What if 7 days isn't enough?</summary>
+      <p>That's on us. We picked the scope on the kickoff call &mdash; if we miscalibrated, we finish for free. If you change scope mid-build, we'll quote a separate engagement.</p>
+    </details>
+    <details>
+      <summary>Why so cheap?</summary>
+      <p>Because we've narrowed the scope until the build is repeatable. Bigger engagements cost more &mdash; this is the on-ramp.</p>
+    </details>
+    <details>
+      <summary>Do you sign NDAs?</summary>
+      <p>Yes &mdash; mutual, simple. DPAs case-by-case: since the agent runs in your environment on your keys, in most cases there is no data processed by us.</p>
+    </details>
+    <details>
+      <summary>International?</summary>
+      <p>US-only for v1. International after our first cohort.</p>
+    </details>
+  </div>
+
+  <h2>Ready?</h2>
+  <div class="cta-row">
+    <p class="us-only">Sprints currently for US-based companies only.</p>
+    <a class="cta" href="{{TALLY_APPLY_URL}}">Apply for a sprint</a>
+    <p class="guarantee">100% refundable until the kickoff call begins. Non-refundable thereafter. Refunds processed by Paddle (Merchant of Record).</p>
+  </div>
+
+  <footer>
+    Questions first? <a href="mailto:{{HELLO_EMAIL_ADDRESS}}">Email us.</a><br />
+    &copy; AutoBrandFlow
+  </footer>
+</main>
+</body>
+</html>
