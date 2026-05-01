@@ -1,0 +1,12 @@
+{
+  "name": "autobrandflow-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static AutoBrandFlow explainer site (RAPA-19), published to GitHub Pages.",
+  "scripts": {
+    "deploy": "gh-pages -d docs --dotfiles"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
